@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Registration Form
+    </title>
+    <style>
+       
+       form{
+            border: 5px solid white;
+            height: 100%;
+            width: 800px;
+            margin:0px auto; 
+            text-align: left;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 120%;
+        }
+        h1{
+            color:black;
+            background-color:whitesmoke;
+            text-align: center;
+            align-content: center;
+            font-size:  30px;;
+
+        }
+        
+        h1:hover{
+            color:white;
+            background-color: rgb(252, 249, 222);
+            
+        }
+        .textbox{
+            width:180px;
+            height:50px;
+            margin-top:20px; 
+        }
+        
+        #button{
+            width: 90px;
+            height: 40px;
+            background-color:white;
+            color:rgb(32, 26, 26);
+            border-radius:10px 20px 10px 20px;
+            border-color: thistle;
+            font-size: 80%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        
+        td input{
+            margin-top:20px;
+        }
+    </style>
+<body>
+    <form>
+        <h1> Student Registration Form</h1>
+        <table>
+            <tr class="tb">
+                <td>First Name :</td>
+                <td><input type="text"Name="fname"placeholder="Enter your first name"required></td>
+                <td>Last Name :</td>
+                <td><input type="text"Name="lname"placeholder="Enter your last name"required></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><input type="text"Name="Aname"placeholder="Enter your address"required></td>
+                <td>Date of Birth :</td>
+                <td><input type="date" name="bday"required></td>
+            </tr>
+            <tr>
+                <td><label="phone">Contact number :</label></td>
+                <td><input type="tel" id="phone" name="phone"maxlength="10"required></td>
+                <td>Gender :</td>
+                <td><input type="radio"Name="gender" value="Male"> Male  <input type="radio"Name="gender" value="Female"> Female</td>
+            </tr>
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text"name="name"required></td>
+                <td>User Password:</td>
+                <td><input type="password"name="password"required></td>
+            </tr>
+            
+            <tr>
+                <td>City:</td>
+                <td><select>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Mumbai">Nagpur</option>
+                    <option value="Mumbai">Jalgaon</option></select>
+                </td>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Enter your email address"required></td>
+            </tr>
+            <tr>
+                <td>Hobby :</td>
+                <td><input type="checkbox" name="hobby" value="Playing"> Playing
+                    <input type="checkbox" name="hobby" value="Reading"> Reading <br>
+                    <input type="checkbox" name="hobby" value="Travelling"> Travelling
+                    <input type="checkbox" name="hobby" value="Cooking"> Cooking </td>
+
+                <td>Skills :</td>
+                <td><input list="skills" name="skills"></td>
+                    <td><datalist id="skills">
+                        <option value="Html">
+                        <option value="Css">
+                        <option value="Bootstrap">
+                        <option value="Javascript">
+                        <option value="Angular">
+                        <option value="React">
+                    </datalist></td>
+    
+            </tr>
+           
+            <tr>
+                <td>Select image:</td>
+                <td><input type ="file" name="image" multiple></td>
+                <td>Comment:</td>
+                <td><textarea class="textbox" name="message" col="80" rows="5">This is Text...</textarea></td>
+            </tr>
+           
+
+        </table>
+    
+        <input type="submit"id=button value="Save">
+        <input type="reset"id=button value="Reset value">
+
+    </form>
+</body>
+</html>
